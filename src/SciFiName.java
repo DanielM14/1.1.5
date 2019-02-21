@@ -21,14 +21,25 @@ public class SciFiName
         System.out.print("Enter the first name of a second sibling or relative: ");
         String relativeName2 = UserInput.getString();
 
-        Math.random();
-        double r = Math.random();
+        String sciFirstName1, sciFirstName2, sciLastName1, sciLastName2, sciCityBorn1, sciCityBorn2, sciSchool, sciRelative1, sciRelative2,sciRelative3, sciRelative4;
 
-        int diceRoll = (int)(Math.random() * 11) + 2;
+        sciFirstName1 = firstName.substring(0,2);
+        sciFirstName2 = firstName.substring(3,4);
+        sciLastName1 = lastName.substring(0,2);
+        sciLastName2 = lastName.substring(0,2);
+        sciCityBorn1 = city.substring(0,2);
+        sciCityBorn2 = city.substring(3,4);
 
-        int diceRoll2 = (int)(Math.random() * 6) + 1;
-        diceRoll += (int)(Math.random() * 6) + 1;
+        sciSchool = school.substring(0,2);
+        System.out.println(sciSchool);
 
-        System.out.println("Your random number is " + Math.random() + ".");
+        sciRelative1 = relativeName1.substring(0,2);
+        System.out.println(sciRelative1);
+
+        sciRelative2 = relativeName2.substring(0,2);
+        System.out.println(sciRelative2);
+
+        System.out.println("Welcome to Earth " + sciFirstName1 + sciFirstName2 + " " + sciLastName1 + sciLastName2 + " " + "From " + sciCityBorn1 + sciCityBorn2);
+
     }
 }
